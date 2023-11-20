@@ -1,62 +1,320 @@
+/* -------  General Styles ------- */
+
 body {
- font-family: "Comic Sans MS", "Comic Sans";
-  font-size:20px;
-  margin: 0;
-  padding: 0;
-}
-img {
-max-width: 25%;
-height: auto;
+  font-family: "Lato", sans-serif;
 }
 
-header {
-  background-color: #081578;
-  padding: 20px;
-  color: white;
-  text-align: center;
-  font-size:25px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  margin-right: 20px;
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
   text-align: center;
 }
 
-main {
-  padding: 20px;
-  background-color: aliceblue;
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
 }
 
 section {
-  margin-bottom: 40px;
-}
-
-h2 {
-  margin-bottom: 10px;
-}
-
-h3 { 
-  margin-bottom: 10px;
-}
-footer {
-  background-color: #081578;
   padding: 20px;
-  color: white;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+main img {
+  width: 100px;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu{
+  display: flex;
+}
+
+
+
+
+header {
+  background-color: #ff385c;
+  padding: 20px 20px 0 20px;
   text-align: center;
 }
 
-h2 {
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 36px;
+  color: #fff;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Search Form ------- */
+
+form {
+  border: 2px solid #ff385c;
+  padding: 10px;
+
+}
+
+form label {
+  font-weight: bold;
+}
+
+form select, form input {
+  margin-bottom: 5px;
+  width: 100px;
+  margin-right:15px;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px;
+  width: 50%;
+}
+
+.date::placeholder {
+  color: black;
+}
+
+
+
+.form-container{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+/* -------  About ------- */
+
+
+#img12{
+  display: flex;
+  flex-direction: row;
+  
+ 
+}
+#about img {
+ 
+  width:30%;
+ margin-right: 15px;
+}
+
+
+/* -------  Ideas ------- */
+
+#ideas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* Adjust the gap as needed */
+}
+
+.grid-item {
   text-align: center;
 }
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+
+
+
+/* -------  host ------- */
+
+#host {
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: space-between;
+}
+
+#host img{
+  width: 50%;
+  height: auto;
+  margin-left: 50px;
+}
+
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
+@media (max-width: 768px) {
+
+
+
+  /*-- nav bar --*/
+  .navbar {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text within each item */
+  }
+  .menu {
+    display: flex;
+  }
+
+/*-- FORM --*/
+
+
+
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+
+.form-group {
+  padding: 0.1em;
+  display: flex; /* Add flex display to the form-group */
+  align-items:center; /* Center items vertically within the form-group */
+}
+
+
+.form-group > label {
+  padding: .5em .2em .5em 0;
+  flex: 1;
+}
+.form-group > input,
+form select {
+  flex: 3;
+  margin: 0.2em; /* Add some margin for spacing */
+}
+
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+  margin-top: 1em; /* Add margin to the button */
+  margin-left: 150px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+
+
+/*-- About --*/
+#img12 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+}
+#img12 img{
+  width: 80%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/*-- IDEAS --*/
+
+
+.grid-container{
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: space-around;
+}
+
+
+#ideas img{
+  width: 100%;
+  height: auto;
+}
+
+
+/*-- HOST --*/
+
+
+#host {
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: space-around;
+}
+
+#host img{
+  width: 80%;
+  height: auto;
+}
+
+
+
+}
+
+
+
