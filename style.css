@@ -296,16 +296,23 @@ button:hover {
 
 
 /*-- About --*/
-#img12 {
+#about {
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: space-around;
 }
-#img12 img{
-  width: 80%;
-  height: auto;
-  margin-bottom: 10px;
+#item-about{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ 
+}
+
+
+#item-about  img{
+width: 80%;
+margin-bottom: 10%;
 }
 
 
