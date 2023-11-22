@@ -153,31 +153,23 @@ form button {
 
 /* -------  About ------- */
 
-
 #about {
   display: flex;
-  flex-direction: column; /* Change from column to row */
-  align-items: center;
+  flex-direction: column;
+ 
 }
 
 
-
-#item-image img{
-  width: 20%;
-  margin-left: 23px;
-
-}
-#p-images img {
-  width:24%;
-  margin-right: 16px;
+#p-images{
+ display: flex;
+ flex-direction: column;
 }
 
-#p-images {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
 
+#p-images img{
+  width: 100%;
+  margin-bottom: 40px;
+}
 
 
 
