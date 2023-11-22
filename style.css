@@ -155,23 +155,27 @@ form button {
 
 #about {
   display: flex;
-  flex-direction: column;
- 
+  flex-direction: column; /* Change from column to row */
+  align-items: center;
 }
 
 
-#p-images{
- display: flex;
- flex-direction: column;
+
+#item-image img{
+  width: 20%;
+  margin-left: 23px;
+
+}
+#p-images img {
+  width:24%;
+  margin-right: 16px;
 }
 
-
-#p-images img{
-  width: 100%;
-  margin-bottom: 40px;
+#p-images {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
-
-
 
 
 /* -------  Ideas ------- */
@@ -290,22 +294,20 @@ button:hover {
 #about {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  justify-content: space-around;
-}
-#item-about{
- display: flex;
- flex-direction: column;
- align-items: center;
  
 }
 
 
-#item-about  img{
-width: 80%;
-margin-bottom: 10%;
+#p-images{
+ display: flex;
+ flex-direction: column;
 }
 
+
+#p-images img{
+  width: 100%;
+  margin-bottom: 40px;
+}
 
 /*-- IDEAS --*/
 
